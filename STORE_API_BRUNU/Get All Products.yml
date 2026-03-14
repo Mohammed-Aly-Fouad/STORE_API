@@ -5,7 +5,25 @@ info:
 
 http:
   method: GET
-  url: "{{store_api}}"
+  url: "{{store_api}}?name=so&featured=true&company=marcosd"
+  params:
+    - name: name
+      value: so
+      type: query
+    - name: featured
+      value: "true"
+      type: query
+    - name: company
+      value: marcosd
+      type: query
+    - name: page
+      value: f
+      type: query
+      disabled: true
+    - name: sort
+      value: name
+      type: query
+      disabled: true
   auth: inherit
 
 settings:
